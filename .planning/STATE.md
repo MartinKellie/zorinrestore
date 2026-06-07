@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 02-python-scanner/02-04-PLAN.md
-last_updated: "2026-06-07T15:41:33.903Z"
+stopped_at: Completed 02-python-scanner/02-03-PLAN.md
+last_updated: "2026-06-07T15:43:05.422Z"
 last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 progress:
   total_phases: 5
   completed_phases: 1
   total_plans: 11
-  completed_plans: 8
+  completed_plans: 9
   percent: 20
 ---
 
@@ -58,6 +58,7 @@ Progress: [██░░░░░░░░] 20%
 | Phase 02-python-scanner P01 | 3 | 2 tasks | 7 files |
 | Phase 02-python-scanner P02 | 6 | 2 tasks | 30 files |
 | Phase 02-python-scanner P04 | 1 | 1 tasks | 1 files |
+| Phase 02-python-scanner P03 | 2 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -91,6 +92,9 @@ Recent decisions affecting current work:
 - [Phase 02-python-scanner]: getattr(collector, '__name__', repr(collector)) used instead of collector.__name__ to support mocking in test_main.py
 - [Phase 02-python-scanner]: 02-04: Extended machines query (adds os_name, kernel_version, architecture, scanner_version, python_version) rather than adding a second parallel query
 - [Phase 02-python-scanner]: 02-04: ScanFolders uses useTransition for pending state — more idiomatic React 18+ than manual boolean
+- [Phase 02-python-scanner]: Mock shutil as module attribute (patch collector's shutil) not global shutil.which — scopes mock to target collector only
+- [Phase 02-python-scanner]: Antigravity: confidence=medium + needs_review=True when version cmd times out — GUI launcher may not emit version to stdout
+- [Phase 02-python-scanner]: Python ScanItem always emitted in package_managers using sys.executable — not gated on shutil.which since interpreter is always present
 
 ### Pending Todos
 
@@ -102,6 +106,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T15:41:28.804Z
-Stopped at: Completed 02-python-scanner/02-04-PLAN.md
+Last session: 2026-06-07T15:43:05.421Z
+Stopped at: Completed 02-python-scanner/02-03-PLAN.md
 Resume file: None

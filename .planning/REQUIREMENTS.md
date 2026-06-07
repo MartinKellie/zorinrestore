@@ -44,9 +44,9 @@
 
 ### Scanner Modules
 
-- [ ] **MOD-01**: AI tools module — detects Claude Desktop/Code, Claude skills, Codex, OpenAI CLI/config, MCP servers, AI-related scripts/repos
-- [ ] **MOD-02**: IDEs/editors module — detects Cursor, Zed, VS Code, Antigravity; captures version, executable path, config path, extension list (where safely available)
-- [ ] **MOD-03**: Package managers/dev tools module — detects Node (node, npm, pnpm, yarn), Python tooling (python versions, pipx), system dev tools from fixed allowlist
+- [x] **MOD-01**: AI tools module — detects Claude Desktop/Code, Claude skills, Codex, OpenAI CLI/config, MCP servers, AI-related scripts/repos
+- [x] **MOD-02**: IDEs/editors module — detects Cursor, Zed, VS Code, Antigravity; captures version, executable path, config path, extension list (where safely available)
+- [x] **MOD-03**: Package managers/dev tools module — detects Node (node, npm, pnpm, yarn), Python tooling (python versions, pipx), system dev tools from fixed allowlist
 - [ ] **MOD-04**: Git/SSH module — captures git username/email, default branch, SSH key presence (filenames only, never contents), remote host types from approved projects
 - [ ] **MOD-05**: Shell metadata module — captures detected shell, config file paths, PATH customisation presence, last modified dates
 - [ ] **MOD-06**: Project folders module — detects projects under approved roots: name, path, git status, remote URL presence, package type, key files, last modified date
@@ -109,7 +109,7 @@
 
 - [x] **SET-01**: Settings page shows auth status / logged-in email
 - [x] **SET-02**: Settings page provides scanner token management (create, view, revoke)
-- [ ] **SET-03**: Settings page provides scan folder management (add, remove)
+- [x] **SET-03**: Settings page provides scan folder management (add, remove)
 - [x] **SET-04**: Settings page shows machine name with ability to edit
 - [ ] **SET-05**: Settings page shows OpenAI analysis status
 
@@ -191,9 +191,9 @@
 | SCAN-06 | Phase 2 | Complete |
 | SCAN-07 | Phase 2 | Complete |
 | SCAN-08 | Phase 2 | Complete |
-| MOD-01 | Phase 2 | Pending |
-| MOD-02 | Phase 2 | Pending |
-| MOD-03 | Phase 2 | Pending |
+| MOD-01 | Phase 2 | Complete |
+| MOD-02 | Phase 2 | Complete |
+| MOD-03 | Phase 2 | Complete |
 | MOD-04 | Phase 2 | Pending |
 | MOD-05 | Phase 2 | Pending |
 | MOD-06 | Phase 2 | Pending |
@@ -232,7 +232,7 @@
 | WARN-01 | Phase 2 | Complete |
 | SET-01 | Phase 1 | Complete |
 | SET-02 | Phase 1 | Complete |
-| SET-03 | Phase 2 | Pending |
+| SET-03 | Phase 2 | Complete |
 | SET-04 | Phase 1 | Complete |
 | SET-05 | Phase 4 | Pending |
 
