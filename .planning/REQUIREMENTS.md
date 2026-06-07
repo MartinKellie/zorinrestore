@@ -72,7 +72,7 @@
 
 ### Secrets Checklist
 
-- [ ] **SEC-01**: Dashboard shows a central Secrets Checklist with detected .env variable names and manual reminders
+- [x] **SEC-01**: Dashboard shows a central Secrets Checklist with detected .env variable names and manual reminders
 - [x] **SEC-02**: User can add manual secret reminders (e.g. "recreate GitHub token") — values are never stored
 - [x] **SEC-03**: Each inventory item can be flagged as having a secret dependency
 - [x] **SEC-04**: Items with secret dependencies link back to the Secrets Checklist
@@ -210,7 +210,7 @@
 | REVQ-01 | Phase 3 | Complete |
 | REVQ-02 | Phase 3 | Complete |
 | REVQ-03 | Phase 3 | Complete |
-| SEC-01 | Phase 3 | Pending |
+| SEC-01 | Phase 3 | Complete |
 | SEC-02 | Phase 3 | Complete |
 | SEC-03 | Phase 3 | Complete |
 | SEC-04 | Phase 3 | Complete |

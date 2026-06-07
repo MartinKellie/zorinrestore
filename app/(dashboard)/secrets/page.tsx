@@ -17,8 +17,8 @@ export default async function SecretsPage() {
     .order("created_at", { ascending: true })
 
   // Get latest run for machine
-  let envItems: Record<string, unknown>[] = []
-  let flaggedItems: Record<string, unknown>[] = []
+  let envItems: Parameters<typeof SecretsView>[0]["envItems"] = []
+  let flaggedItems: Parameters<typeof SecretsView>[0]["flaggedItems"] = []
 
   const { data: machine } = await supabase
     .from("machines")
@@ -45,7 +45,7 @@ export default async function SecretsPage() {
         .eq("category", "env_files")
         .order("tool_name", { ascending: true })
 
-      envItems = (envFiles as Record<string, unknown>[]) ?? []
+      envItems = envFiles ?? []
 
       const { data: secretDeps } = await supabase
         .from("scan_items")
@@ -56,13 +56,13 @@ export default async function SecretsPage() {
         .eq("has_secret_dep", true)
         .order("category", { ascending: true })
 
-      flaggedItems = (secretDeps as Record<string, unknown>[]) ?? []
+      flaggedItems = secretDeps ?? []
     }
   }
 
   return (
     <SecretsView
-      reminders={(reminders as Record<string, unknown>[]) ?? []}
+      reminders={reminders ?? []}
       envItems={envItems}
       flaggedItems={flaggedItems}
     />

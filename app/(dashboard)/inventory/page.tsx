@@ -16,7 +16,7 @@ export default async function InventoryPage() {
     .single()
 
   let latestRun = null
-  let items: Record<string, unknown>[] = []
+  let items: Parameters<typeof InventoryView>[0]["items"] = []
 
   if (machine) {
     const { data: run } = await supabase
@@ -38,7 +38,7 @@ export default async function InventoryPage() {
         .eq("scan_run_id", latestRun.id)
         .order("category", { ascending: true })
 
-      items = (scanItems as Record<string, unknown>[]) ?? []
+      items = scanItems ?? []
     }
   }
 

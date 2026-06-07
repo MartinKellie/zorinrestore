@@ -15,7 +15,7 @@ export default async function ReviewPage() {
     .eq("user_id", user.id)
     .single()
 
-  let items: Record<string, unknown>[] = []
+  let items: Parameters<typeof ReviewView>[0]["items"] = []
 
   if (machine) {
     const { data: run } = await supabase
@@ -36,7 +36,7 @@ export default async function ReviewPage() {
         .eq("needs_review", true)
         .order("category", { ascending: true })
 
-      items = (reviewItems as Record<string, unknown>[]) ?? []
+      items = reviewItems ?? []
     }
   }
 
