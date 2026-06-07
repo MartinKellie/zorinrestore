@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 03-dashboard/03-05-PLAN.md
-last_updated: "2026-06-07T21:17:30.464Z"
+stopped_at: Completed 03-dashboard/03-06-PLAN.md
+last_updated: "2026-06-07T21:22:14.021Z"
 last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 18
-  completed_plans: 16
+  completed_plans: 17
   percent: 20
 ---
 
@@ -66,6 +66,7 @@ Progress: [██░░░░░░░░] 20%
 | Phase 03-dashboard P03 | 2 | 2 tasks | 4 files |
 | Phase 03-dashboard P04 | 2 | 2 tasks | 3 files |
 | Phase 03-dashboard P05 | 3 | 2 tasks | 9 files |
+| Phase 03-dashboard P06 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -118,6 +119,9 @@ Recent decisions affecting current work:
 - [Phase 03-dashboard]: 03-04: Default export filters at DB level with .neq('importance','Ignore'); include_ignored=true fetches all then partitions in JS (one round-trip)
 - [Phase 03-dashboard]: 03-05: Secrets page fetches three datasets independently (secret_reminders, env_files, has_secret_dep=true) via separate Supabase queries
 - [Phase 03-dashboard]: 03-05: INVENTORY_UI_SPEC.md written for Cursor per CLAUDE.md frontend rule — 348 lines, INV-01 through INV-09, uses Array.reduce for groupBy (not Object.groupBy)
+- [Phase 03-dashboard]: 03-06: REVIEW_QUEUE_UI_SPEC.md uses optimistic removal — classifyReviewItem success removes item from local state immediately
+- [Phase 03-dashboard]: 03-06: SECRETS_CHECKLIST_UI_SPEC.md optimistic add uses crypto.randomUUID() temp id — Server Actions return { error? } only, not inserted row
+- [Phase 03-dashboard]: 03-06: SEC-04 flagSecretDep excluded from SecretsView — flagging handled from inventory item detail drawer per INVENTORY_UI_SPEC.md
 
 ### Pending Todos
 
@@ -129,6 +133,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T21:17:30.462Z
-Stopped at: Completed 03-dashboard/03-05-PLAN.md
+Last session: 2026-06-07T21:22:14.019Z
+Stopped at: Completed 03-dashboard/03-06-PLAN.md
 Resume file: None
