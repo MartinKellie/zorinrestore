@@ -98,8 +98,8 @@
 
 - [x] **EXP-01**: User can export `machine-inventory.md` (human-readable, rebuild reference)
 - [x] **EXP-02**: User can export `machine-inventory.json` (structured, for backup/future import)
-- [ ] **EXP-03**: Export includes an option to include ignored items (default: excluded)
-- [ ] **EXP-04**: When ignored items are included, they appear in a separate section
+- [x] **EXP-03**: Export includes an option to include ignored items (default: excluded)
+- [x] **EXP-04**: When ignored items are included, they appear in a separate section
 
 ### Scan Warnings
 
@@ -227,8 +227,8 @@
 | DISC-05 | Phase 5 | Pending |
 | EXP-01 | Phase 3 | Complete |
 | EXP-02 | Phase 3 | Complete |
-| EXP-03 | Phase 3 | Pending |
-| EXP-04 | Phase 3 | Pending |
+| EXP-03 | Phase 3 | Complete |
+| EXP-04 | Phase 3 | Complete |
 | WARN-01 | Phase 2 | Complete |
 | SET-01 | Phase 1 | Complete |
 | SET-02 | Phase 1 | Complete |

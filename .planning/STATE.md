@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 03-dashboard/03-03-PLAN.md
-last_updated: "2026-06-07T21:07:59.533Z"
+stopped_at: Completed 03-dashboard/03-04-PLAN.md
+last_updated: "2026-06-07T21:12:32.468Z"
 last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 18
-  completed_plans: 14
+  completed_plans: 15
   percent: 20
 ---
 
@@ -64,6 +64,7 @@ Progress: [██░░░░░░░░] 20%
 | Phase 03-dashboard P01 | 2 | 2 tasks | 5 files |
 | Phase 03-dashboard P02 | 5 | 2 tasks | 3 files |
 | Phase 03-dashboard P03 | 2 | 2 tasks | 4 files |
+| Phase 03-dashboard P04 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -111,6 +112,9 @@ Recent decisions affecting current work:
 - [Phase 03-dashboard]: 03-02: setup.ts createClient mock changed to vi.fn() — enables mockResolvedValueOnce per-test overrides for all Phase 3 test files
 - [Phase 03-dashboard]: 03-02: beforeEach mockReset pattern in inventory tests prevents mock queue bleed when implementation short-circuits before calling createClient
 - [Phase 03-dashboard]: 03-03: beforeEach mockReset required in review and secrets tests — ClassificationSchema.safeParse returns early (before createClient) on invalid input, leaving queued mocks to contaminate subsequent tests
+- [Phase 03-dashboard]: 03-04: URL fallback pattern (nextUrl?.searchParams ?? new URL(request.url).searchParams) used in export routes — NextRequest.nextUrl undefined in JSDOM test environment
+- [Phase 03-dashboard]: 03-04: Export routes use new Response() for file downloads, NextResponse.json() only for 401 — correct streaming behavior
+- [Phase 03-dashboard]: 03-04: Default export filters at DB level with .neq('importance','Ignore'); include_ignored=true fetches all then partitions in JS (one round-trip)
 
 ### Pending Todos
 
@@ -122,6 +126,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T21:07:59.531Z
-Stopped at: Completed 03-dashboard/03-03-PLAN.md
+Last session: 2026-06-07T21:12:32.466Z
+Stopped at: Completed 03-dashboard/03-04-PLAN.md
 Resume file: None
