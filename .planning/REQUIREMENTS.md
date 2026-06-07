@@ -33,14 +33,14 @@
 
 ### Scanner Core
 
-- [ ] **SCAN-01**: Scanner runs on Zorin/Linux from repo with `python -m scanner scan`
-- [ ] **SCAN-02**: Scanner uses a module structure — each category is a separate collector module
-- [ ] **SCAN-03**: Each collector returns a consistent item structure (name, version, path, category, confidence, importance estimate)
-- [ ] **SCAN-04**: Scanner pre-fetches config (approved folders + any approved extra commands) from API before scanning
-- [ ] **SCAN-05**: Scanner redacts secret values before upload — stores .env variable names only, never values
+- [x] **SCAN-01**: Scanner runs on Zorin/Linux from repo with `python -m scanner scan`
+- [x] **SCAN-02**: Scanner uses a module structure — each category is a separate collector module
+- [x] **SCAN-03**: Each collector returns a consistent item structure (name, version, path, category, confidence, importance estimate)
+- [x] **SCAN-04**: Scanner pre-fetches config (approved folders + any approved extra commands) from API before scanning
+- [x] **SCAN-05**: Scanner redacts secret values before upload — stores .env variable names only, never values
 - [x] **SCAN-06**: Scanner uploads redacted findings to Supabase via Vercel API route using scanner token
-- [ ] **SCAN-07**: Scanner terminal output is minimal: scan started, scan completed/failed, upload successful/failed
-- [ ] **SCAN-08**: Scanner logs critical warnings (token invalid, sync failed, folder inaccessible, secret-like value redacted)
+- [x] **SCAN-07**: Scanner terminal output is minimal: scan started, scan completed/failed, upload successful/failed
+- [x] **SCAN-08**: Scanner logs critical warnings (token invalid, sync failed, folder inaccessible, secret-like value redacted)
 
 ### Scanner Modules
 
@@ -103,7 +103,7 @@
 
 ### Scan Warnings
 
-- [ ] **WARN-01**: Dashboard shows critical scan warnings: invalid token, failed sync, inaccessible folder, redacted secret-like value, blocked non-allowlisted command, missing expected config folder
+- [x] **WARN-01**: Dashboard shows critical scan warnings: invalid token, failed sync, inaccessible folder, redacted secret-like value, blocked non-allowlisted command, missing expected config folder
 
 ### Settings
 
@@ -183,14 +183,14 @@
 | FLDR-02 | Phase 2 | Complete |
 | FLDR-03 | Phase 2 | Complete |
 | FLDR-04 | Phase 2 | Pending |
-| SCAN-01 | Phase 2 | Pending |
-| SCAN-02 | Phase 2 | Pending |
-| SCAN-03 | Phase 2 | Pending |
-| SCAN-04 | Phase 2 | Pending |
-| SCAN-05 | Phase 2 | Pending |
+| SCAN-01 | Phase 2 | Complete |
+| SCAN-02 | Phase 2 | Complete |
+| SCAN-03 | Phase 2 | Complete |
+| SCAN-04 | Phase 2 | Complete |
+| SCAN-05 | Phase 2 | Complete |
 | SCAN-06 | Phase 2 | Complete |
-| SCAN-07 | Phase 2 | Pending |
-| SCAN-08 | Phase 2 | Pending |
+| SCAN-07 | Phase 2 | Complete |
+| SCAN-08 | Phase 2 | Complete |
 | MOD-01 | Phase 2 | Pending |
 | MOD-02 | Phase 2 | Pending |
 | MOD-03 | Phase 2 | Pending |
@@ -229,7 +229,7 @@
 | EXP-02 | Phase 3 | Pending |
 | EXP-03 | Phase 3 | Pending |
 | EXP-04 | Phase 3 | Pending |
-| WARN-01 | Phase 2 | Pending |
+| WARN-01 | Phase 2 | Complete |
 | SET-01 | Phase 1 | Complete |
 | SET-02 | Phase 1 | Complete |
 | SET-03 | Phase 2 | Pending |
