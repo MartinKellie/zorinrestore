@@ -41,12 +41,14 @@ vi.mock("next/headers", () => ({
 }));
 
 // Mock @/lib/supabase/server so Server Actions don't fail on createClient().
+// Uses vi.fn() so per-test overrides via mockResolvedValueOnce() work correctly.
 vi.mock("@/lib/supabase/server", () => ({
-  createClient: () =>
+  createClient: vi.fn(() =>
     Promise.resolve({
       auth: {
         getUser: () =>
           Promise.resolve({ data: { user: null }, error: null }),
       },
-    }),
+    })
+  ),
 }));
