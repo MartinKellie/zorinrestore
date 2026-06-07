@@ -107,10 +107,10 @@
 
 ### Settings
 
-- [ ] **SET-01**: Settings page shows auth status / logged-in email
-- [ ] **SET-02**: Settings page provides scanner token management (create, view, revoke)
+- [x] **SET-01**: Settings page shows auth status / logged-in email
+- [x] **SET-02**: Settings page provides scanner token management (create, view, revoke)
 - [ ] **SET-03**: Settings page provides scan folder management (add, remove)
-- [ ] **SET-04**: Settings page shows machine name with ability to edit
+- [x] **SET-04**: Settings page shows machine name with ability to edit
 - [ ] **SET-05**: Settings page shows OpenAI analysis status
 
 ## v2 Requirements
@@ -230,10 +230,10 @@
 | EXP-03 | Phase 3 | Pending |
 | EXP-04 | Phase 3 | Pending |
 | WARN-01 | Phase 2 | Pending |
-| SET-01 | Phase 1 | Pending |
-| SET-02 | Phase 1 | Pending |
+| SET-01 | Phase 1 | Complete |
+| SET-02 | Phase 1 | Complete |
 | SET-03 | Phase 2 | Pending |
-| SET-04 | Phase 1 | Pending |
+| SET-04 | Phase 1 | Complete |
 | SET-05 | Phase 4 | Pending |
 
 **Coverage:**

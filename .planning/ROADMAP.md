@@ -14,7 +14,7 @@ Frontend UI work in Phases 1, 3, 4, and 5 produces `FRONTEND_UI_SPEC.md` files f
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Schema, auth, scanner token system, and upload gateway — the trust boundary everything else depends on
+- [x] **Phase 1: Foundation** - Schema, auth, scanner token system, and upload gateway — the trust boundary everything else depends on (completed 2026-06-07)
 - [ ] **Phase 2: Python Scanner** - Local scanner that detects dev/AI tools across all categories and uploads via token
 - [ ] **Phase 3: Dashboard** - Inventory view, Review Queue, Secrets Checklist, and export — the primary user value
 - [ ] **Phase 4: AI Analysis** - Manually triggered OpenAI classification pass that annotates inventory with importance and restore notes
@@ -100,7 +100,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 4/5 | In Progress|  |
+| 1. Foundation | 5/5 | Complete   | 2026-06-07 |
 | 2. Python Scanner | 0/TBD | Not started | - |
 | 3. Dashboard | 0/TBD | Not started | - |
 | 4. AI Analysis | 0/TBD | Not started | - |
