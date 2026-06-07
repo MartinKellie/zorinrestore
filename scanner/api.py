@@ -40,10 +40,15 @@ def upload_payload(payload: dict, token: str, app_url: str) -> bool:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return resp.status == 200
     except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode("utf-8", errors="replace")
+        except Exception:
+            pass
         if e.code == 401:
             logger.warning("TOKEN_INVALID_OR_REVOKED status=401")
         else:
-            logger.warning("UPLOAD_FAILED status=%s", e.code)
+            logger.warning("UPLOAD_FAILED status=%s body=%s", e.code, body)
         return False
     except Exception as e:
         logger.warning("UPLOAD_FAILED error=%s", e)

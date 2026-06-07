@@ -47,7 +47,7 @@ def main() -> None:
         machine_arch=platform.machine(),
         scanner_version=__version__,
         python_version=platform.python_version(),
-        scanned_at=datetime.datetime.now(datetime.UTC).isoformat(),
+        scanned_at=datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z",
         items=all_items,
     )
 
