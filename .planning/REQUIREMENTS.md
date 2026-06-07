@@ -237,8 +237,8 @@
 | SET-05 | Phase 4 | Pending |
 
 **Coverage:**
-- v1 requirements: 58 total
-- Mapped to phases: 58
+- v1 requirements: 66 total
+- Mapped to phases: 66
 - Unmapped: 0 ✓
 
 ---
