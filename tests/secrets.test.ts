@@ -1,9 +1,17 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { createClient } from "@/lib/supabase/server";
 
-// Stubs are RED until lib/actions/secrets.ts is implemented in plan 03-03
-
 describe("addSecretReminder (SEC-02)", () => {
+  beforeEach(() => {
+    vi.mocked(createClient).mockReset();
+    vi.mocked(createClient).mockResolvedValue({
+      auth: {
+        getUser: () =>
+          Promise.resolve({ data: { user: null }, error: null }),
+      },
+    } as any);
+  });
+
   it("returns error for empty name", async () => {
     const { addSecretReminder } = await import("@/lib/actions/secrets");
     vi.mocked(createClient).mockResolvedValueOnce({
@@ -30,6 +38,16 @@ describe("addSecretReminder (SEC-02)", () => {
 });
 
 describe("flagSecretDep (SEC-03)", () => {
+  beforeEach(() => {
+    vi.mocked(createClient).mockReset();
+    vi.mocked(createClient).mockResolvedValue({
+      auth: {
+        getUser: () =>
+          Promise.resolve({ data: { user: null }, error: null }),
+      },
+    } as any);
+  });
+
   it("returns error when user is not authenticated", async () => {
     const { flagSecretDep } = await import("@/lib/actions/secrets");
     const result = await flagSecretDep("item-1", true);

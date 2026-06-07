@@ -1,9 +1,17 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import { createClient } from "@/lib/supabase/server";
 
-// Stubs are RED until lib/actions/review.ts is implemented in plan 03-02
-
 describe("classifyReviewItem (REVQ-02)", () => {
+  beforeEach(() => {
+    vi.mocked(createClient).mockReset();
+    vi.mocked(createClient).mockResolvedValue({
+      auth: {
+        getUser: () =>
+          Promise.resolve({ data: { user: null }, error: null }),
+      },
+    } as any);
+  });
+
   it("returns error for invalid classification value", async () => {
     const { classifyReviewItem } = await import("@/lib/actions/review");
     vi.mocked(createClient).mockResolvedValueOnce({
