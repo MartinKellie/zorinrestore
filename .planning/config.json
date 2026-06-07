@@ -10,7 +10,8 @@
     "verifier": true,
     "nyquist_validation": true,
     "auto_advance": true,
-    "frontend_as_spec": true
+    "frontend_as_spec": true,
+    "_auto_chain_active": false
   },
   "notes": {
     "frontend": "Frontend phases produce FRONTEND_UI_SPEC.md for IDE (Cursor) — not implemented directly by Claude"

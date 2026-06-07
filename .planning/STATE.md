@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-foundation/01-02-PLAN.md
-last_updated: "2026-06-07T08:46:55.320Z"
+stopped_at: Completed 01-foundation/01-03-PLAN.md
+last_updated: "2026-06-07T08:49:50.077Z"
 last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 5
-  completed_plans: 3
+  completed_plans: 4
   percent: 20
 ---
 
@@ -53,6 +53,7 @@ Progress: [██░░░░░░░░] 20%
 | Phase 01-foundation P00 | 2 | 2 tasks | 7 files |
 | Phase 01-foundation P01 | 3 | 2 tasks | 13 files |
 | Phase 01-foundation P02 | 8 | 2 tasks | 6 files |
+| Phase 01-foundation P03 | 3 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -76,6 +77,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: 01-02: proxy.ts exports proxy function (not middleware) — Next.js 16 renamed convention
 - [Phase 01-foundation]: 01-02: getUser() used in proxy.ts (not getSession()) to prevent auth bypass
 - [Phase 01-foundation]: 01-02: Settings page is a stub — full UI via FRONTEND_UI_SPEC.md per CLAUDE.md frontend rule
+- [Phase 01-foundation]: Zod v4 requires z.record(z.string(), z.unknown()) — key schema arg required (changed from v3 z.record(z.unknown()))
+- [Phase 01-foundation]: Vitest setup.ts mocks adminSupabase and next/headers globally so Server Actions import cleanly in JSDOM test environment
 
 ### Pending Todos
 
@@ -87,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T08:46:55.318Z
-Stopped at: Completed 01-foundation/01-02-PLAN.md
+Last session: 2026-06-07T08:49:50.076Z
+Stopped at: Completed 01-foundation/01-03-PLAN.md
 Resume file: None

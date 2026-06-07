@@ -8,7 +8,7 @@
 ### Authentication
 
 - [x] **AUTH-01**: User can sign in to dashboard with magic-link (email link, no password)
-- [ ] **AUTH-02**: User session persists across browser refresh
+- [x] **AUTH-02**: User session persists across browser refresh
 - [x] **AUTH-03**: All dashboard pages are protected and redirect unauthenticated users to sign-in
 
 ### Machine
@@ -170,7 +170,7 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | AUTH-01 | Phase 1 | Complete |
-| AUTH-02 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Complete |
 | AUTH-03 | Phase 1 | Complete |
 | MACH-01 | Phase 1 | Complete |
 | MACH-02 | Phase 1 | Complete |
