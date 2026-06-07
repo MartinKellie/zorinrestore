@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 02-python-scanner/02-06-PLAN.md
-last_updated: "2026-06-07T15:50:56.083Z"
+stopped_at: Completed 03-dashboard/03-01-PLAN.md
+last_updated: "2026-06-07T21:00:15.201Z"
 last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 progress:
   total_phases: 5
   completed_phases: 2
-  total_plans: 11
-  completed_plans: 11
+  total_plans: 18
+  completed_plans: 12
   percent: 20
 ---
 
@@ -61,6 +61,7 @@ Progress: [██░░░░░░░░] 20%
 | Phase 02-python-scanner P03 | 2 | 2 tasks | 6 files |
 | Phase 02-python-scanner P05 | 8 | 2 tasks | 8 files |
 | Phase 02-python-scanner P06 | 1 | 2 tasks | 0 files |
+| Phase 03-dashboard P01 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -101,6 +102,9 @@ Recent decisions affecting current work:
 - [Phase 02-python-scanner]: env_files never calls open() — delegates all .env parsing to parse_env_keys() so values cannot reach ScanItem
 - [Phase 02-python-scanner]: project_folders iterates only immediate children (no deep recursion) and gates on empty approved_folders
 - [Phase 02-python-scanner]: 02-06: Auto-approved checkpoint:human-verify per auto_advance config — programmatic suite gate (72 Python + 24 TS tests, 0 type errors) substitutes for live scan verification in this execution context
+- [Phase 03-dashboard]: 03-01: secret_reminders uses plain CREATE TABLE (not IF NOT EXISTS) — migrations run exactly once
+- [Phase 03-dashboard]: 03-01: GRANT only on new secret_reminders table — scan_items already GRANT-ed in 0001_foundation.sql
+- [Phase 03-dashboard]: 03-01: Dynamic import() used in Phase 3 test stubs for natural RED state (module-not-found) without explicit fail hacks
 
 ### Pending Todos
 
@@ -112,6 +116,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07T15:50:56.081Z
-Stopped at: Completed 02-python-scanner/02-06-PLAN.md
+Last session: 2026-06-07T21:00:15.199Z
+Stopped at: Completed 03-dashboard/03-01-PLAN.md
 Resume file: None

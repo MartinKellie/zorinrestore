@@ -59,22 +59,22 @@
 - [ ] **INV-03**: Ignored items are hidden by default with a "Show ignored" toggle
 - [ ] **INV-04**: User can filter inventory by category and importance
 - [ ] **INV-05**: User can view full item details (name, category, subcategory, path, version, detection source, importance, confidence, notes, last seen)
-- [ ] **INV-06**: User can edit restore importance for any item
-- [ ] **INV-07**: User can edit general note for any item (what it is / why used)
-- [ ] **INV-08**: User can edit restore note for any item (what needs to happen during rebuild)
+- [x] **INV-06**: User can edit restore importance for any item
+- [x] **INV-07**: User can edit general note for any item (what it is / why used)
+- [x] **INV-08**: User can edit restore note for any item (what needs to happen during rebuild)
 - [ ] **INV-09**: Advanced/debug evidence (detection command, config path, redacted output, scanner rule) is hidden by default but viewable
 
 ### Review Queue
 
 - [ ] **REVQ-01**: Unknown or low-confidence scanner findings appear in Review Queue
-- [ ] **REVQ-02**: User can classify items in Review Queue as Essential, Useful, Optional, or Ignore
+- [x] **REVQ-02**: User can classify items in Review Queue as Essential, Useful, Optional, or Ignore
 - [ ] **REVQ-03**: Classified items move into the main inventory view
 
 ### Secrets Checklist
 
 - [ ] **SEC-01**: Dashboard shows a central Secrets Checklist with detected .env variable names and manual reminders
-- [ ] **SEC-02**: User can add manual secret reminders (e.g. "recreate GitHub token") — values are never stored
-- [ ] **SEC-03**: Each inventory item can be flagged as having a secret dependency
+- [x] **SEC-02**: User can add manual secret reminders (e.g. "recreate GitHub token") — values are never stored
+- [x] **SEC-03**: Each inventory item can be flagged as having a secret dependency
 - [ ] **SEC-04**: Items with secret dependencies link back to the Secrets Checklist
 
 ### OpenAI Analysis
@@ -96,8 +96,8 @@
 
 ### Export
 
-- [ ] **EXP-01**: User can export `machine-inventory.md` (human-readable, rebuild reference)
-- [ ] **EXP-02**: User can export `machine-inventory.json` (structured, for backup/future import)
+- [x] **EXP-01**: User can export `machine-inventory.md` (human-readable, rebuild reference)
+- [x] **EXP-02**: User can export `machine-inventory.json` (structured, for backup/future import)
 - [ ] **EXP-03**: Export includes an option to include ignored items (default: excluded)
 - [ ] **EXP-04**: When ignored items are included, they appear in a separate section
 
@@ -203,16 +203,16 @@
 | INV-03 | Phase 3 | Pending |
 | INV-04 | Phase 3 | Pending |
 | INV-05 | Phase 3 | Pending |
-| INV-06 | Phase 3 | Pending |
-| INV-07 | Phase 3 | Pending |
-| INV-08 | Phase 3 | Pending |
+| INV-06 | Phase 3 | Complete |
+| INV-07 | Phase 3 | Complete |
+| INV-08 | Phase 3 | Complete |
 | INV-09 | Phase 3 | Pending |
 | REVQ-01 | Phase 3 | Pending |
-| REVQ-02 | Phase 3 | Pending |
+| REVQ-02 | Phase 3 | Complete |
 | REVQ-03 | Phase 3 | Pending |
 | SEC-01 | Phase 3 | Pending |
-| SEC-02 | Phase 3 | Pending |
-| SEC-03 | Phase 3 | Pending |
+| SEC-02 | Phase 3 | Complete |
+| SEC-03 | Phase 3 | Complete |
 | SEC-04 | Phase 3 | Pending |
 | AI-01 | Phase 4 | Pending |
 | AI-02 | Phase 4 | Pending |
@@ -225,8 +225,8 @@
 | DISC-03 | Phase 5 | Pending |
 | DISC-04 | Phase 5 | Pending |
 | DISC-05 | Phase 5 | Pending |
-| EXP-01 | Phase 3 | Pending |
-| EXP-02 | Phase 3 | Pending |
+| EXP-01 | Phase 3 | Complete |
+| EXP-02 | Phase 3 | Complete |
 | EXP-03 | Phase 3 | Pending |
 | EXP-04 | Phase 3 | Pending |
 | WARN-01 | Phase 2 | Complete |
