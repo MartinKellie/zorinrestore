@@ -45,14 +45,21 @@ Plans:
 **Goal**: `python -m scanner scan` runs on the Zorin machine, detects dev/AI tools across all categories, redacts secrets, and successfully uploads findings to Supabase via the Phase 1 endpoint
 **Depends on**: Phase 1
 **Requirements**: MACH-03, FLDR-01, FLDR-02, FLDR-03, FLDR-04, SCAN-01, SCAN-02, SCAN-03, SCAN-04, SCAN-05, SCAN-06, SCAN-07, SCAN-08, MOD-01, MOD-02, MOD-03, MOD-04, MOD-05, MOD-06, MOD-07, WARN-01, SET-03
-**Frontend**: Scan folder management UI (add/remove approved roots) produced as FRONTEND_UI_SPEC.md for Cursor
+**Frontend**: Scan folder management UI (add/remove approved roots) produced as SCANNER_SETTINGS_UI_SPEC.md for Cursor
 **Success Criteria** (what must be TRUE):
   1. `python -m scanner scan` completes on Zorin and the terminal shows only start/complete/upload status lines — no credential output, no stack traces on normal runs
   2. After a scan, scan_items rows exist in Supabase covering AI tools, IDEs, package managers, git config, shell metadata, project folders, and .env variable names
   3. .env files are processed with only variable names stored — no values appear anywhere in the database or scanner logs
   4. Martin can add and remove approved project root folders from the Settings page; the scanner fetches this list before scanning and only inspects projects under those roots
   5. Critical scanner warnings (invalid token, folder inaccessible, secret-like value redacted) are logged by the scanner and surfaced on the dashboard
-**Plans**: TBD
+**Plans**: 6 plans
+Plans:
+- [ ] 02-01-PLAN.md — Server-side completion: extend validateScannerToken, upload route DB writes, /api/scanner/config endpoint, scan-config Server Actions
+- [ ] 02-02-PLAN.md — Scanner core package: models, config, api, redact, harness + pytest config + all test stubs (RED)
+- [ ] 02-03-PLAN.md — Collectors A: ai_tools, ides, package_managers (Wave 2, tests GREEN)
+- [ ] 02-04-PLAN.md — SCANNER_SETTINGS_UI_SPEC.md for Cursor: machine details + scan folder management sections
+- [ ] 02-05-PLAN.md — Collectors B: git_ssh, shell, project_folders, env_files (Wave 3, tests GREEN)
+- [ ] 02-06-PLAN.md — Integration checkpoint: full suite gate + live scan verification on Zorin
 
 ### Phase 3: Dashboard
 **Goal**: Martin can view, filter, edit, and export his full machine inventory — the tool is useful as a rebuild reference without any AI involvement
@@ -101,7 +108,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete    | 2026-06-07 |
-| 2. Python Scanner | 0/TBD | Not started | - |
+| 2. Python Scanner | 0/6 | Planned     | - |
 | 3. Dashboard | 0/TBD | Not started | - |
 | 4. AI Analysis | 0/TBD | Not started | - |
 | 5. AI-Assisted Discovery | 0/TBD | Not started | - |
