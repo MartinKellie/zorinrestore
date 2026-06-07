@@ -29,7 +29,7 @@
 - [x] **FLDR-01**: User can add approved project root folders via dashboard (e.g. ~/Projects)
 - [x] **FLDR-02**: User can remove approved project root folders
 - [x] **FLDR-03**: Scanner fetches the approved folder list before scanning
-- [ ] **FLDR-04**: Scanner detects projects under approved roots only — does not rummage through home directory
+- [x] **FLDR-04**: Scanner detects projects under approved roots only — does not rummage through home directory
 
 ### Scanner Core
 
@@ -47,10 +47,10 @@
 - [x] **MOD-01**: AI tools module — detects Claude Desktop/Code, Claude skills, Codex, OpenAI CLI/config, MCP servers, AI-related scripts/repos
 - [x] **MOD-02**: IDEs/editors module — detects Cursor, Zed, VS Code, Antigravity; captures version, executable path, config path, extension list (where safely available)
 - [x] **MOD-03**: Package managers/dev tools module — detects Node (node, npm, pnpm, yarn), Python tooling (python versions, pipx), system dev tools from fixed allowlist
-- [ ] **MOD-04**: Git/SSH module — captures git username/email, default branch, SSH key presence (filenames only, never contents), remote host types from approved projects
-- [ ] **MOD-05**: Shell metadata module — captures detected shell, config file paths, PATH customisation presence, last modified dates
-- [ ] **MOD-06**: Project folders module — detects projects under approved roots: name, path, git status, remote URL presence, package type, key files, last modified date
-- [ ] **MOD-07**: .env files module — reads variable names only (left-hand side of assignments), immediately discards values, records which files were found and what variable names existed
+- [x] **MOD-04**: Git/SSH module — captures git username/email, default branch, SSH key presence (filenames only, never contents), remote host types from approved projects
+- [x] **MOD-05**: Shell metadata module — captures detected shell, config file paths, PATH customisation presence, last modified dates
+- [x] **MOD-06**: Project folders module — detects projects under approved roots: name, path, git status, remote URL presence, package type, key files, last modified date
+- [x] **MOD-07**: .env files module — reads variable names only (left-hand side of assignments), immediately discards values, records which files were found and what variable names existed
 
 ### Inventory
 
@@ -182,7 +182,7 @@
 | FLDR-01 | Phase 2 | Complete |
 | FLDR-02 | Phase 2 | Complete |
 | FLDR-03 | Phase 2 | Complete |
-| FLDR-04 | Phase 2 | Pending |
+| FLDR-04 | Phase 2 | Complete |
 | SCAN-01 | Phase 2 | Complete |
 | SCAN-02 | Phase 2 | Complete |
 | SCAN-03 | Phase 2 | Complete |
@@ -194,10 +194,10 @@
 | MOD-01 | Phase 2 | Complete |
 | MOD-02 | Phase 2 | Complete |
 | MOD-03 | Phase 2 | Complete |
-| MOD-04 | Phase 2 | Pending |
-| MOD-05 | Phase 2 | Pending |
-| MOD-06 | Phase 2 | Pending |
-| MOD-07 | Phase 2 | Pending |
+| MOD-04 | Phase 2 | Complete |
+| MOD-05 | Phase 2 | Complete |
+| MOD-06 | Phase 2 | Complete |
+| MOD-07 | Phase 2 | Complete |
 | INV-01 | Phase 3 | Pending |
 | INV-02 | Phase 3 | Pending |
 | INV-03 | Phase 3 | Pending |
