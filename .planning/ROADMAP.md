@@ -73,7 +73,15 @@ Plans:
   4. Unknown or low-confidence scanner findings appear in the Review Queue; Martin can classify them as Essential/Useful/Optional/Ignore and classified items move into the main inventory
   5. Martin can view the Secrets Checklist showing detected .env variable names and add manual secret reminders; inventory items can be flagged as having secret dependencies with links back to the checklist
   6. Martin can export `machine-inventory.md` and `machine-inventory.json`; the export option to include ignored items works and places them in a separate section
-**Plans**: TBD
+**Plans**: 7 plans
+Plans:
+- [ ] 03-01-PLAN.md — DB migration (secret_reminders, has_secret_dep, importance normalisation) + test stubs RED
+- [ ] 03-02-PLAN.md — Inventory Server Actions: updateItemImportance, updateItemNotes (TDD, tests GREEN)
+- [ ] 03-03-PLAN.md — Review + Secrets Server Actions: classifyReviewItem, addSecretReminder, deleteSecretReminder, flagSecretDep (TDD, tests GREEN)
+- [ ] 03-04-PLAN.md — Export API routes: /api/export/markdown and /api/export/json with include_ignored support (TDD, tests GREEN)
+- [ ] 03-05-PLAN.md — Dashboard page Server Component shells + INVENTORY_UI_SPEC.md for Cursor
+- [ ] 03-06-PLAN.md — REVIEW_QUEUE_UI_SPEC.md + SECRETS_CHECKLIST_UI_SPEC.md for Cursor
+- [ ] 03-07-PLAN.md — EXPORT_UI_SPEC.md + full suite gate + integration checkpoint
 
 ### Phase 4: AI Analysis
 **Goal**: Martin can trigger an OpenAI classification pass from the dashboard and review AI-suggested importance tiers, restore notes, and category classifications for each inventory item
