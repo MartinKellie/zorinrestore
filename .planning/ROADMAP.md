@@ -33,7 +33,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Martin can generate a scanner token from the Settings page and copy the ready-to-run scan command
   4. Martin can revoke a scanner token from the Settings page and the token immediately stops working
   5. The `/api/scanner/upload` endpoint validates the scanner token server-side and rejects any request without a valid token — Supabase credentials are never required on the local machine
-**Plans**: TBD
+**Plans**: 5 plans
+Plans:
+- [ ] 01-00-PLAN.md — Test infrastructure (Vitest config + failing stubs for all unit-testable requirements)
+- [ ] 01-01-PLAN.md — Next.js 16 scaffold + Supabase migration SQL + client utilities
+- [ ] 01-02-PLAN.md — Auth layer: proxy.ts, login page, Server Action, /auth/confirm route
+- [ ] 01-03-PLAN.md — Token system + upload gateway: lib/tokens.ts, Server Actions, /api/scanner/upload
+- [ ] 01-04-PLAN.md — Settings page FRONTEND_UI_SPEC.md for Cursor (SET-01, SET-02, SET-04)
 
 ### Phase 2: Python Scanner
 **Goal**: `python -m scanner scan` runs on the Zorin machine, detects dev/AI tools across all categories, redacts secrets, and successfully uploads findings to Supabase via the Phase 1 endpoint
@@ -94,7 +100,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/5 | Not started | - |
 | 2. Python Scanner | 0/TBD | Not started | - |
 | 3. Dashboard | 0/TBD | Not started | - |
 | 4. AI Analysis | 0/TBD | Not started | - |
