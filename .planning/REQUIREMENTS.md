@@ -15,7 +15,7 @@
 
 - [x] **MACH-01**: User can register a machine with a user-facing name (e.g. "Zorin 18 Pro Laptop")
 - [x] **MACH-02**: Machine record captures hostname, OS name/version, kernel version, architecture, scanner version, Python version used, last scan time
-- [ ] **MACH-03**: Dashboard shows the registered machine's details
+- [x] **MACH-03**: Dashboard shows the registered machine's details
 
 ### Scanner Token
 
@@ -26,9 +26,9 @@
 
 ### Scan Folders
 
-- [ ] **FLDR-01**: User can add approved project root folders via dashboard (e.g. ~/Projects)
-- [ ] **FLDR-02**: User can remove approved project root folders
-- [ ] **FLDR-03**: Scanner fetches the approved folder list before scanning
+- [x] **FLDR-01**: User can add approved project root folders via dashboard (e.g. ~/Projects)
+- [x] **FLDR-02**: User can remove approved project root folders
+- [x] **FLDR-03**: Scanner fetches the approved folder list before scanning
 - [ ] **FLDR-04**: Scanner detects projects under approved roots only — does not rummage through home directory
 
 ### Scanner Core
@@ -38,7 +38,7 @@
 - [ ] **SCAN-03**: Each collector returns a consistent item structure (name, version, path, category, confidence, importance estimate)
 - [ ] **SCAN-04**: Scanner pre-fetches config (approved folders + any approved extra commands) from API before scanning
 - [ ] **SCAN-05**: Scanner redacts secret values before upload — stores .env variable names only, never values
-- [ ] **SCAN-06**: Scanner uploads redacted findings to Supabase via Vercel API route using scanner token
+- [x] **SCAN-06**: Scanner uploads redacted findings to Supabase via Vercel API route using scanner token
 - [ ] **SCAN-07**: Scanner terminal output is minimal: scan started, scan completed/failed, upload successful/failed
 - [ ] **SCAN-08**: Scanner logs critical warnings (token invalid, sync failed, folder inaccessible, secret-like value redacted)
 
@@ -174,21 +174,21 @@
 | AUTH-03 | Phase 1 | Complete |
 | MACH-01 | Phase 1 | Complete |
 | MACH-02 | Phase 1 | Complete |
-| MACH-03 | Phase 2 | Pending |
+| MACH-03 | Phase 2 | Complete |
 | TOKEN-01 | Phase 1 | Complete |
 | TOKEN-02 | Phase 1 | Complete |
 | TOKEN-03 | Phase 1 | Complete |
 | TOKEN-04 | Phase 1 | Complete |
-| FLDR-01 | Phase 2 | Pending |
-| FLDR-02 | Phase 2 | Pending |
-| FLDR-03 | Phase 2 | Pending |
+| FLDR-01 | Phase 2 | Complete |
+| FLDR-02 | Phase 2 | Complete |
+| FLDR-03 | Phase 2 | Complete |
 | FLDR-04 | Phase 2 | Pending |
 | SCAN-01 | Phase 2 | Pending |
 | SCAN-02 | Phase 2 | Pending |
 | SCAN-03 | Phase 2 | Pending |
 | SCAN-04 | Phase 2 | Pending |
 | SCAN-05 | Phase 2 | Pending |
-| SCAN-06 | Phase 2 | Pending |
+| SCAN-06 | Phase 2 | Complete |
 | SCAN-07 | Phase 2 | Pending |
 | SCAN-08 | Phase 2 | Pending |
 | MOD-01 | Phase 2 | Pending |
