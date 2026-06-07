@@ -7,22 +7,22 @@
 
 ### Authentication
 
-- [ ] **AUTH-01**: User can sign in to dashboard with magic-link (email link, no password)
+- [x] **AUTH-01**: User can sign in to dashboard with magic-link (email link, no password)
 - [ ] **AUTH-02**: User session persists across browser refresh
-- [ ] **AUTH-03**: All dashboard pages are protected and redirect unauthenticated users to sign-in
+- [x] **AUTH-03**: All dashboard pages are protected and redirect unauthenticated users to sign-in
 
 ### Machine
 
-- [ ] **MACH-01**: User can register a machine with a user-facing name (e.g. "Zorin 18 Pro Laptop")
-- [ ] **MACH-02**: Machine record captures hostname, OS name/version, kernel version, architecture, scanner version, Python version used, last scan time
+- [x] **MACH-01**: User can register a machine with a user-facing name (e.g. "Zorin 18 Pro Laptop")
+- [x] **MACH-02**: Machine record captures hostname, OS name/version, kernel version, architecture, scanner version, Python version used, last scan time
 - [ ] **MACH-03**: Dashboard shows the registered machine's details
 
 ### Scanner Token
 
-- [ ] **TOKEN-01**: User can generate a scanner token from the dashboard
-- [ ] **TOKEN-02**: Dashboard shows a ready-to-run setup/scan command the user can copy
-- [ ] **TOKEN-03**: User can revoke a scanner token from the dashboard
-- [ ] **TOKEN-04**: Scanner authenticates via token sent to Vercel API route — no Supabase credentials on local machine
+- [x] **TOKEN-01**: User can generate a scanner token from the dashboard
+- [x] **TOKEN-02**: Dashboard shows a ready-to-run setup/scan command the user can copy
+- [x] **TOKEN-03**: User can revoke a scanner token from the dashboard
+- [x] **TOKEN-04**: Scanner authenticates via token sent to Vercel API route — no Supabase credentials on local machine
 
 ### Scan Folders
 
@@ -169,16 +169,16 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AUTH-01 | Phase 1 | Pending |
+| AUTH-01 | Phase 1 | Complete |
 | AUTH-02 | Phase 1 | Pending |
-| AUTH-03 | Phase 1 | Pending |
-| MACH-01 | Phase 1 | Pending |
-| MACH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Complete |
+| MACH-01 | Phase 1 | Complete |
+| MACH-02 | Phase 1 | Complete |
 | MACH-03 | Phase 2 | Pending |
-| TOKEN-01 | Phase 1 | Pending |
-| TOKEN-02 | Phase 1 | Pending |
-| TOKEN-03 | Phase 1 | Pending |
-| TOKEN-04 | Phase 1 | Pending |
+| TOKEN-01 | Phase 1 | Complete |
+| TOKEN-02 | Phase 1 | Complete |
+| TOKEN-03 | Phase 1 | Complete |
+| TOKEN-04 | Phase 1 | Complete |
 | FLDR-01 | Phase 2 | Pending |
 | FLDR-02 | Phase 2 | Pending |
 | FLDR-03 | Phase 2 | Pending |

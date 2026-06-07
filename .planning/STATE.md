@@ -1,3 +1,19 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: planning
+stopped_at: Completed 01-foundation-00-PLAN.md
+last_updated: "2026-06-07T08:41:54.399Z"
+last_activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
+progress:
+  total_phases: 5
+  completed_phases: 0
+  total_plans: 5
+  completed_plans: 1
+  percent: 20
+---
+
 # Project State
 
 ## Project Reference
@@ -14,7 +30,7 @@ Plan: 0 of TBD in current phase
 Status: Ready to plan
 Last activity: 2026-06-07 — Roadmap created; ready for Phase 1 planning
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
@@ -34,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: n/a
 
 *Updated after each plan completion*
+| Phase 01-foundation P00 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -48,6 +65,9 @@ Recent decisions affecting current work:
 - Phase 1: Always use getUser() in server code, never getSession() — prevents auth bypass
 - Phase 1: Opaque token stored as SHA-256 hash in DB (not JWT) — hard revocability without denylist overhead
 - All phases: Frontend UI work produces FRONTEND_UI_SPEC.md for Cursor — Claude does not implement frontend directly
+- [Phase 01-foundation]: 01-00: @ alias set to repo root — resolves correctly once Next.js app scaffolded in 01-01
+- [Phase 01-foundation]: 01-00: Dynamic import() used in test stubs for natural RED state (module-not-found) without explicit fail hacks
+- [Phase 01-foundation]: 01-00: MACH-02 upload test hard-coded to fail — Phase 2 is correct implementation home for scanner upload
 
 ### Pending Todos
 
@@ -59,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-06-07
-Stopped at: Roadmap created — Phase 1 ready for /gsd:plan-phase 1
+Last session: 2026-06-07T08:41:54.394Z
+Stopped at: Completed 01-foundation-00-PLAN.md
 Resume file: None
