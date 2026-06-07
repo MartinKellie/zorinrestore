@@ -54,15 +54,15 @@
 
 ### Inventory
 
-- [ ] **INV-01**: Dashboard shows inventory grouped by category
-- [ ] **INV-02**: Inventory shows restore importance (Essential / Useful / Optional / Ignore) for each item
-- [ ] **INV-03**: Ignored items are hidden by default with a "Show ignored" toggle
-- [ ] **INV-04**: User can filter inventory by category and importance
-- [ ] **INV-05**: User can view full item details (name, category, subcategory, path, version, detection source, importance, confidence, notes, last seen)
+- [x] **INV-01**: Dashboard shows inventory grouped by category
+- [x] **INV-02**: Inventory shows restore importance (Essential / Useful / Optional / Ignore) for each item
+- [x] **INV-03**: Ignored items are hidden by default with a "Show ignored" toggle
+- [x] **INV-04**: User can filter inventory by category and importance
+- [x] **INV-05**: User can view full item details (name, category, subcategory, path, version, detection source, importance, confidence, notes, last seen)
 - [x] **INV-06**: User can edit restore importance for any item
 - [x] **INV-07**: User can edit general note for any item (what it is / why used)
 - [x] **INV-08**: User can edit restore note for any item (what needs to happen during rebuild)
-- [ ] **INV-09**: Advanced/debug evidence (detection command, config path, redacted output, scanner rule) is hidden by default but viewable
+- [x] **INV-09**: Advanced/debug evidence (detection command, config path, redacted output, scanner rule) is hidden by default but viewable
 
 ### Review Queue
 
@@ -198,15 +198,15 @@
 | MOD-05 | Phase 2 | Complete |
 | MOD-06 | Phase 2 | Complete |
 | MOD-07 | Phase 2 | Complete |
-| INV-01 | Phase 3 | Pending |
-| INV-02 | Phase 3 | Pending |
-| INV-03 | Phase 3 | Pending |
-| INV-04 | Phase 3 | Pending |
-| INV-05 | Phase 3 | Pending |
+| INV-01 | Phase 3 | Complete |
+| INV-02 | Phase 3 | Complete |
+| INV-03 | Phase 3 | Complete |
+| INV-04 | Phase 3 | Complete |
+| INV-05 | Phase 3 | Complete |
 | INV-06 | Phase 3 | Complete |
 | INV-07 | Phase 3 | Complete |
 | INV-08 | Phase 3 | Complete |
-| INV-09 | Phase 3 | Pending |
+| INV-09 | Phase 3 | Complete |
 | REVQ-01 | Phase 3 | Complete |
 | REVQ-02 | Phase 3 | Complete |
 | REVQ-03 | Phase 3 | Complete |
