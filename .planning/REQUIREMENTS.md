@@ -66,16 +66,16 @@
 
 ### Review Queue
 
-- [ ] **REVQ-01**: Unknown or low-confidence scanner findings appear in Review Queue
+- [x] **REVQ-01**: Unknown or low-confidence scanner findings appear in Review Queue
 - [x] **REVQ-02**: User can classify items in Review Queue as Essential, Useful, Optional, or Ignore
-- [ ] **REVQ-03**: Classified items move into the main inventory view
+- [x] **REVQ-03**: Classified items move into the main inventory view
 
 ### Secrets Checklist
 
 - [ ] **SEC-01**: Dashboard shows a central Secrets Checklist with detected .env variable names and manual reminders
 - [x] **SEC-02**: User can add manual secret reminders (e.g. "recreate GitHub token") — values are never stored
 - [x] **SEC-03**: Each inventory item can be flagged as having a secret dependency
-- [ ] **SEC-04**: Items with secret dependencies link back to the Secrets Checklist
+- [x] **SEC-04**: Items with secret dependencies link back to the Secrets Checklist
 
 ### OpenAI Analysis
 
@@ -207,13 +207,13 @@
 | INV-07 | Phase 3 | Complete |
 | INV-08 | Phase 3 | Complete |
 | INV-09 | Phase 3 | Pending |
-| REVQ-01 | Phase 3 | Pending |
+| REVQ-01 | Phase 3 | Complete |
 | REVQ-02 | Phase 3 | Complete |
-| REVQ-03 | Phase 3 | Pending |
+| REVQ-03 | Phase 3 | Complete |
 | SEC-01 | Phase 3 | Pending |
 | SEC-02 | Phase 3 | Complete |
 | SEC-03 | Phase 3 | Complete |
-| SEC-04 | Phase 3 | Pending |
+| SEC-04 | Phase 3 | Complete |
 | AI-01 | Phase 4 | Pending |
 | AI-02 | Phase 4 | Pending |
 | AI-03 | Phase 4 | Pending |
