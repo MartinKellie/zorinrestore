@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Schema, auth, scanner token system, and upload gateway — the trust boundary everything else depends on (completed 2026-06-07)
 - [ ] **Phase 2: Python Scanner** - Local scanner that detects dev/AI tools across all categories and uploads via token
-- [ ] **Phase 3: Dashboard** - Inventory view, Review Queue, Secrets Checklist, and export — the primary user value
+- [x] **Phase 3: Dashboard** - Inventory view, Review Queue, Secrets Checklist, and export — the primary user value (completed 2026-06-07)
 - [ ] **Phase 4: AI Analysis** - Manually triggered OpenAI classification pass that annotates inventory with importance and restore notes
 - [ ] **Phase 5: AI-Assisted Discovery** - OpenAI suggests additional scan commands; user approves in dashboard; scanner runs them next time
 
@@ -117,6 +117,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete    | 2026-06-07 |
 | 2. Python Scanner | 5/6 | In Progress|  |
-| 3. Dashboard | 6/7 | In Progress|  |
+| 3. Dashboard | 7/7 | Complete   | 2026-06-07 |
 | 4. AI Analysis | 0/TBD | Not started | - |
 | 5. AI-Assisted Discovery | 0/TBD | Not started | - |
